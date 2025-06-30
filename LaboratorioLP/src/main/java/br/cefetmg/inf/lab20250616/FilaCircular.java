@@ -32,9 +32,9 @@ public class FilaCircular implements Fila{
         tamanho++;
     }
 
-    public int desenfileirar() {
+    public Integer desenfileirar() {
         if (estaVazia()) {
-            throw new IllegalStateException("Fila vazia");
+            return null;
         }
 
         int elemento = elementos[frente];

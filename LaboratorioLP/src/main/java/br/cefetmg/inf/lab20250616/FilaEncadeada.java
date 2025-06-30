@@ -28,7 +28,10 @@ public class FilaEncadeada implements Fila{
         }
         contador++;
     }
-    public int desenfileirar() {
+    public Integer desenfileirar() {
+        if(estaVazia()){
+            return null;
+        }
         int valor = inicio.dado;
         inicio = inicio.proximo;
         if (inicio == null) {
