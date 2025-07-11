@@ -1,6 +1,4 @@
-package br.cefetmg.inf.lab20250609;
-
-import br.cefetmg.inf.lab20250616.ListaEncadeada;
+package br.cefetmg.inf.lab20250616;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
@@ -89,3 +87,4 @@ public class ListaEncadeadaTest {
         assertEquals(1, lista.tamanho());
     }
 }
+

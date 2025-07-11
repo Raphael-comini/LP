@@ -1,5 +1,4 @@
-package br.cefetmg.inf.lab20250616;
-    
+package br.cefetmg.inf.lab20250623;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
@@ -68,5 +67,3 @@ public class DequeEncadeadoTest {
         assertTrue(deque.estaVazia());
     }
 }
-
-

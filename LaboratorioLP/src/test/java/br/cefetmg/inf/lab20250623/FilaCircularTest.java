@@ -1,7 +1,5 @@
-package br.cefetmg.inf.lab20250616;
-
+package br.cefetmg.inf.lab20250623;
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
 public class FilaCircularTest{
@@ -41,3 +39,4 @@ public class FilaCircularTest{
         assertEquals(1, fila.desenfileirar());; 
     }
 }
+

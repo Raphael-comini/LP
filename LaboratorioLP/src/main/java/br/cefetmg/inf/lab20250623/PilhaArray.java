@@ -1,4 +1,4 @@
-package br.cefetmg.inf.lab20250616;
+package br.cefetmg.inf.lab20250623;
     
 public class PilhaArray implements Pilha{
     private static final int CAPACIDADE_INICIAL= 10;

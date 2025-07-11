@@ -1,4 +1,4 @@
-package br.cefetmg.inf.lab20250616;
+package br.cefetmg.inf.lab20250623;
 
 public interface Pilha {
     public void empilhar(int item);

@@ -1,6 +1,5 @@
-package br.cefetmg.inf.lab20250609;
+package br.cefetmg.inf.lab20250616;
 
-import br.cefetmg.inf.lab20250616.ListaDuplamenteEncadeada;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
@@ -59,4 +58,5 @@ public class ListaDuplamenteEncadeadaTest {
         assertNull(lista.obterPosicao(5));
     }
 }
+
 
