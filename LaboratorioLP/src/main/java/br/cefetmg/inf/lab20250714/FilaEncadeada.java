@@ -1,24 +1,22 @@
-package br.cefetmg.inf.lab20250623;
+package br.cefetmg.inf.lab20250714;
 
-public class FilaEncadeada implements Fila{
+public class FilaEncadeada extends AbstractFila{
     private class No {
-        int dado;
+        Object dado;
         No proximo;
-        No(int dado) {
+        No(Object dado) {
             this.dado = dado;
             this.proximo = null;
         }
     }
     private No inicio;
     private No fim;
-    private int contador;
     public FilaEncadeada() {
         inicio = null;
         fim = null;
-        contador = 0;
     }
     @Override
-    public void enfileirar(int dado) {
+    public void enfileirar(Object dado) {
         No novo = new No(dado);
         if (inicio == null) {
             inicio = novo;
@@ -27,37 +25,28 @@ public class FilaEncadeada implements Fila{
             fim.proximo = novo;
             fim = novo;
         }
-        contador++;
+        tamanho++;
     }
     @Override
-    public Integer desenfileirar() {
+    public Object desenfileirar() {
         if(estaVazia()){
             return null;
         }
-        int valor = inicio.dado;
+        Object valor = inicio.dado;
         inicio = inicio.proximo;
         if (inicio == null) {
             fim = null;
         }
-        contador --;
+        tamanho --;
         return valor;
     }
     @Override
-    public Integer obterNoInicio(){
+    public Object obterNoInicio(){
        if(estaVazia())
        {
            return null;
        }
        return inicio.dado;
     }
-    @Override
-    public int tamanho() {
-        return contador;
-    }
-    @Override
-    public boolean estaVazia() {
-        return tamanho() == 0;
-    }
 }
-
 

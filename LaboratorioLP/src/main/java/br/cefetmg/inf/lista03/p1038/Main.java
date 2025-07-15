@@ -25,5 +25,6 @@ public class Main {
         item.definirPreco();
         double total = item.calcularTotal(quantidade);
         System.out.printf("Total: R$ %.2f\n", total);
+        sc.close();
     }
 }

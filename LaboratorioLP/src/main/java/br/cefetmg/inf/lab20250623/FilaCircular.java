@@ -14,14 +14,15 @@ public class FilaCircular implements Fila{
         tamanho = 0;
     }
 
+    @Override
     public boolean estaVazia() {
         return tamanho == 0;
     }
-
+    @Override
     public int tamanho() {
         return tamanho;
     }
-
+    @Override
     public void enfileirar(int elemento) {
         if (tamanho == elementos.length) {
             redimensionar();
@@ -31,7 +32,15 @@ public class FilaCircular implements Fila{
         tras = (tras + 1) % elementos.length;
         tamanho++;
     }
-
+    
+    @Override
+    public Integer obterNoInicio(){
+        if(estaVazia()){
+            return null;
+        }
+        return elementos[frente];
+    }
+    @Override
     public Integer desenfileirar() {
         if (estaVazia()) {
             return null;

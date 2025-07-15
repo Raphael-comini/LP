@@ -23,5 +23,6 @@ public class Main {
                 System.out.println("Essa coluna nao existe Tobias!");
             }
         }
+        scanner.close();
     }
 }

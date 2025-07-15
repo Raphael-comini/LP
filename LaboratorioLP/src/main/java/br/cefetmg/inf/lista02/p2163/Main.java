@@ -3,15 +3,14 @@ import java.util.Scanner;
 public class Main {
 	
     public static void main(String[] args){
-    	Scanner leitor = new Scanner(System.in);
-    	int X = 0, Z = 0;
-    	int N = leitor.nextInt();
-    	int M = leitor.nextInt();
+    	Scanner scanner = new Scanner(System.in);
+    	int N = scanner.nextInt();
+    	int M = scanner.nextInt();
     	int[][] T = new int[N][M];
     	
     	for (int i = 0; i < T.length; i++) {
     		for (int j = 0; j < T[i].length; j++) {
-    			T[i][j] = leitor.nextInt();
+    			T[i][j] = scanner.nextInt();
     		}
     	}
     	
@@ -25,6 +24,7 @@ public class Main {
     	}
     	
     	System.out.println(0 + " " + 0);
+     scanner.close();
     }
     
 	private static boolean isTheSword(int[][] mat, int i, int j) {

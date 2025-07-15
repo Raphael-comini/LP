@@ -30,6 +30,13 @@ public class FilaArray implements Fila{
         return temp[0];
     }
     @Override
+    public Integer obterNoInicio(){
+        if(estaVazia()){
+            return null;
+        }
+        return itens[0];
+    }
+    @Override
     public boolean estaVazia(){
         return topo==0;
     }
